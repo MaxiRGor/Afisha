@@ -11,9 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WishlistActivity"></activity>
+        <activity android:name=".TicketsActivity"></activity>
+        <activity android:name=".WishlistActivity" />
         <activity android:name=".AfishaActivity" />
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

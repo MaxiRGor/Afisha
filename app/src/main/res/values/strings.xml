@@ -2,15 +2,28 @@
     <string name="app_name">Афиша</string>
     <string name="event_price_value">%d руб</string>
     <string name="firestore_collection_events">events</string>
+    <string name="firestore_collection_tickets">tickets</string>
     <string name="firestore_collection_wishlists">wishlists</string>
     <string name="firestore_field_uid">uid</string>
     <string name="firestore_field_count">count</string>
     <string name="firestore_field_event_id">eventId</string>
+    <string name="firebase_field_date">date</string>
     <string name="wishlist">Избранное</string>
     <string name="sign_out">Выйти</string>
     <string name="add_event">Добавить</string>
     <string name="event_added_info">В вашем избранном %d билета (-ов) с итоговой стомостю %d руб</string>
     <string name="choose_a_count_of_tickets">Выберите колиство билетов</string>
-    <string name="wishlist_price_value">%d x %d = % d руб</string>
+    <string name="wishlist_price_value">%d x %d = %d руб</string>
     <string name="you_havent_mark_any_event_yet">Вы не отметили ни одно мероприятие</string>
+    <string name="purchse">Оплатить %d руб</string>
+    <string name="thanks_for_purchase">Спасибо за оплату</string>
+    <string name="please_complete_the_form">Проверьте введенные данные</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Отмена</string>
+    <string name="confirm_before_purchase">Подтвердите данные</string>
+    <string name="tickets">Билеты</string>
+    <string name="firestore_field_is_purchased">isPurchased</string>
+    <string name="apply">Подтвердить</string>
+    <string name="sold_tickts">Проданные билеты</string>
+    <string name="you_havent_bought_any_ticket_yet">Вы еще не приобрели ни одного билета</string>
 </resources>

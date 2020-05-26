@@ -1,4 +1,4 @@
-package com.volovich.afisha;
+package com.volovich.afisha.model;
 
 public class Wishlist {
     public Wishlist() {
@@ -8,14 +8,18 @@ public class Wishlist {
     private String eventId;
     private int count;
 
+
+    private boolean isPurchased;
+
     //not firestore, but local field
     private String documentId;
 
 
-    public Wishlist(String uid, String eventId, int count, String documentId) {
+    public Wishlist(String uid, String eventId, int count, boolean isPurchased, String documentId) {
         this.uid = uid;
         this.eventId = eventId;
         this.count = count;
+        this.isPurchased = isPurchased;
         this.documentId = documentId;
     }
 
@@ -50,4 +54,13 @@ public class Wishlist {
     public void setCount(int count) {
         this.count = count;
     }
+
+    public boolean isPurchased() {
+        return isPurchased;
+    }
+
+    public void setPurchased(boolean purchased) {
+        isPurchased = purchased;
+    }
+
 }

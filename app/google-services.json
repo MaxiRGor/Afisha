@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "702511715061-7c8ri80fjpmlaeq7vrcbjt6tgga0m0r2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.volovich.afisha",
+            "certificate_hash": "ab00903aca11c59dca018c29ecd20a59d2e54c45"
+          }
+        },
+        {
+          "client_id": "702511715061-eguigb80jnnrkku6rr6lgdrseducq5pa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.volovich.afisha",
+            "certificate_hash": "0521c82470eec9e224cc27d0748de3654768f616"
+          }
+        },
+        {
           "client_id": "702511715061-r03nr5oqkrpnphfb4qg33iqt8tssqf7i.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

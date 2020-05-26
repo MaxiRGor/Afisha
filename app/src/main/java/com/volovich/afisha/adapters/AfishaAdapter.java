@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,12 +15,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
 import com.volovich.afisha.AfishaActivity;
-import com.volovich.afisha.Event;
+import com.volovich.afisha.model.Event;
 import com.volovich.afisha.R;
 import com.warkiz.widget.IndicatorSeekBar;
 
@@ -136,6 +134,7 @@ public class AfishaAdapter extends RecyclerView.Adapter<AfishaAdapter.EventViewH
             data.put(context.getString(R.string.firestore_field_uid), AfishaActivity.getUID());
             data.put(context.getString(R.string.firestore_field_event_id), event.getDocumentId());
             data.put(context.getString(R.string.firestore_field_count), progress);
+            data.put(context.getString(R.string.firestore_field_is_purchased), false);
             FirebaseFirestore.getInstance()
                     .collection(context.getString(R.string.firestore_collection_wishlists))
                     .document().set(data);
@@ -148,6 +147,7 @@ public class AfishaAdapter extends RecyclerView.Adapter<AfishaAdapter.EventViewH
                 .collection(context.getString(R.string.firestore_collection_wishlists))
                 .whereEqualTo(context.getString(R.string.firestore_field_event_id), event.getDocumentId())
                 .whereEqualTo(context.getString(R.string.firestore_field_uid), AfishaActivity.getUID())
+                .whereEqualTo(context.getString(R.string.firestore_field_is_purchased),false)
                 .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {

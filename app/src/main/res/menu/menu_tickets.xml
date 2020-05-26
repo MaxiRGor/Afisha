@@ -12,10 +12,10 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_open_tickets"
-        android:icon="@drawable/ic_ticket"
+        android:id="@+id/action_open_afisha"
+        android:icon="@drawable/ic_event"
         android:orderInCategory="300"
-        android:title="@string/tickets"
+        android:title="@string/wishlist"
         app:showAsAction="ifRoom" />
 
     <item

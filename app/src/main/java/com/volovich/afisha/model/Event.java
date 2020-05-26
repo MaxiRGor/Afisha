@@ -1,4 +1,4 @@
-package com.volovich.afisha;
+package com.volovich.afisha.model;
 
 import com.google.firebase.Timestamp;
 

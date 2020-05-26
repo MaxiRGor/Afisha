@@ -1,10 +1,11 @@
 package com.volovich.afisha;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
@@ -18,20 +19,30 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
     private static final String TAG = "log";
+    private float delayInSeconds = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().hide();
         setContentView(R.layout.login_activity);
         checkUserAuthorization();
     }
 
     private void checkUserAuthorization() {
-        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
-            createSignInIntent();
-        } else {
-            startAfishaActivity();
-        }
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+                    createSignInIntent();
+                } else {
+                    startAfishaActivity();
+                }
+            }
+        }, (long) delayInSeconds * 1000);
+
     }
 
     private void startAfishaActivity() {
@@ -49,9 +60,11 @@ public class LoginActivity extends AppCompatActivity {
 
         // Create and launch sign-in intent
         startActivityForResult(
+
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
                         .setAvailableProviders(providers)
+                        .setTheme(R.style.AppTheme)
                         .build(),
                 RC_SIGN_IN);
     }

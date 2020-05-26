@@ -17,8 +17,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.volovich.afisha.adapters.AfishaAdapter;
+import com.volovich.afisha.model.Event;
 
 import java.util.ArrayList;
 
@@ -55,6 +57,7 @@ public class AfishaActivity extends AppCompatActivity {
         //load full collection, convert the result of query to ArrayList of Events and send it to adapter
         FirebaseFirestore.getInstance()
                 .collection(getString(R.string.firestore_collection_events))
+                .orderBy(getString(R.string.firebase_field_date), Query.Direction.ASCENDING)
                 .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
@@ -99,6 +102,11 @@ public class AfishaActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.action_open_tickets) {
+            startTicketsActivity();
+            return true;
+        }
+
         if (id == R.id.action_sign_out) {
             signOut();
             return true;
@@ -107,9 +115,17 @@ public class AfishaActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    private void startTicketsActivity() {
+        Intent intent = new Intent(AfishaActivity.this, TicketsActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.diagonaltranslate, R.anim.alpha);
+        finish();
+    }
+
     private void startWishlistActivity() {
         Intent intent = new Intent(AfishaActivity.this, WishlistActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.diagonaltranslate,R.anim.alpha);
         finish();
     }
 

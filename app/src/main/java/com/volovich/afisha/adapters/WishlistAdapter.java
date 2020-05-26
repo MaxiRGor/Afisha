@@ -1,18 +1,17 @@
 package com.volovich.afisha.adapters;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.volovich.afisha.Event;
+import com.volovich.afisha.model.Event;
 import com.volovich.afisha.R;
 
 import java.text.SimpleDateFormat;
@@ -55,6 +54,11 @@ public class WishlistAdapter extends RecyclerView.Adapter<WishlistAdapter.Marked
         return markedEvents.size();
     }
 
+    public void clearList() {
+        markedEvents = new ArrayList<>();
+        notifyDataSetChanged();
+    }
+
     class MarkedEventViewHolder extends RecyclerView.ViewHolder {
 
 
@@ -94,6 +98,7 @@ public class WishlistAdapter extends RecyclerView.Adapter<WishlistAdapter.Marked
                 .document(markedEvents.get(position).getWishListDocumentId())
                 .delete();
         markedEvents.remove(position);
+        Toast.makeText(context, "Удалено",Toast.LENGTH_SHORT).show();
         notifyItemRemoved(position);
         //notifyDataSetChanged();
     }
