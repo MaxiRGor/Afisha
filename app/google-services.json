@@ -1,58 +1,41 @@
 {
   "project_info": {
-    "project_number": "702511715061",
-    "firebase_url": "https://afisha-f03ec.firebaseio.com",
-    "project_id": "afisha-f03ec",
-    "storage_bucket": "afisha-f03ec.appspot.com"
+    "project_number": "535619381815",
+    "project_id": "afisha-17966",
+    "storage_bucket": "afisha-17966.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:702511715061:android:5a602479113f7b65812bbc",
+        "mobilesdk_app_id": "1:535619381815:android:6fe1a8ff7df2319dd2adb2",
         "android_client_info": {
-          "package_name": "com.volovich.afisha"
+          "package_name": "com.bntu.afisha"
         }
       },
       "oauth_client": [
         {
-          "client_id": "702511715061-7c8ri80fjpmlaeq7vrcbjt6tgga0m0r2.apps.googleusercontent.com",
+          "client_id": "535619381815-ckv0c93ipb50uknnbbgodkt5frtf3olc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.volovich.afisha",
+            "package_name": "com.bntu.afisha",
             "certificate_hash": "ab00903aca11c59dca018c29ecd20a59d2e54c45"
           }
         },
         {
-          "client_id": "702511715061-eguigb80jnnrkku6rr6lgdrseducq5pa.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volovich.afisha",
-            "certificate_hash": "0521c82470eec9e224cc27d0748de3654768f616"
-          }
-        },
-        {
-          "client_id": "702511715061-r03nr5oqkrpnphfb4qg33iqt8tssqf7i.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volovich.afisha",
-            "certificate_hash": "c8e62f2bd3b70100eb73c5f522393262093ec5f5"
-          }
-        },
-        {
-          "client_id": "702511715061-njn5ks53tl0ist6bdg4degnsrp98noro.apps.googleusercontent.com",
+          "client_id": "535619381815-av5jpo7jreesh64i2jpbhrm99uqpj1u4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAwCFVivm_XoJRplAlMkljWTpXdyovCwBU"
+          "current_key": "AIzaSyAIvPtPNptpc8ai-VeWIkfPan0tGHOXZNQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "702511715061-njn5ks53tl0ist6bdg4degnsrp98noro.apps.googleusercontent.com",
+              "client_id": "535619381815-av5jpo7jreesh64i2jpbhrm99uqpj1u4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

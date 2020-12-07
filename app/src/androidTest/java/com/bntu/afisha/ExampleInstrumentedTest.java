@@ -1,4 +1,4 @@
-package com.volovich.afisha;
+package com.bntu.afisha;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package com.volovich.afisha;
+package com.bntu.afisha;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,12 +19,11 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.volovich.afisha.adapters.WishlistAdapter;
-import com.volovich.afisha.model.Event;
-import com.volovich.afisha.model.Wishlist;
+import com.bntu.afisha.adapters.WishlistAdapter;
+import com.bntu.afisha.model.Event;
+import com.bntu.afisha.model.Wishlist;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.volovich.afisha;
+package com.bntu.afisha;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -28,12 +28,11 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.volovich.afisha.adapters.WishlistAdapter;
-import com.volovich.afisha.model.Event;
-import com.volovich.afisha.model.Wishlist;
+import com.bntu.afisha.adapters.WishlistAdapter;
+import com.bntu.afisha.model.Event;
+import com.bntu.afisha.model.Wishlist;
 
 import java.util.ArrayList;
 import java.util.HashMap;

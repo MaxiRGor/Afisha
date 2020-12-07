@@ -1,4 +1,4 @@
-package com.volovich.afisha;
+package com.bntu.afisha;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 123;
     private static final String TAG = "log";
-    private float delayInSeconds = 1;
+    private float delayInSeconds = 0.1f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

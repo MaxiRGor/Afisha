@@ -1,4 +1,4 @@
-package com.volovich.afisha.adapters;
+package com.bntu.afisha.adapters;
 
 import android.content.Context;
 import android.util.Log;
@@ -18,9 +18,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.squareup.picasso.Picasso;
-import com.volovich.afisha.AfishaActivity;
-import com.volovich.afisha.model.Event;
-import com.volovich.afisha.R;
+import com.bntu.afisha.AfishaActivity;
+import com.bntu.afisha.model.Event;
+import com.bntu.afisha.R;
 import com.warkiz.widget.IndicatorSeekBar;
 
 import java.text.SimpleDateFormat;

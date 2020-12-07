@@ -1,4 +1,4 @@
-package com.volovich.afisha;
+package com.bntu.afisha;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,8 +19,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.volovich.afisha.adapters.AfishaAdapter;
-import com.volovich.afisha.model.Event;
+import com.bntu.afisha.adapters.AfishaAdapter;
+import com.bntu.afisha.model.Event;
 
 import java.util.ArrayList;
 
@@ -143,4 +143,3 @@ public class AfishaActivity extends AppCompatActivity {
     }
 
 }
-

@@ -1,4 +1,4 @@
-package com.volovich.afisha.model;
+package com.bntu.afisha.model;
 
 public class Wishlist {
     public Wishlist() {

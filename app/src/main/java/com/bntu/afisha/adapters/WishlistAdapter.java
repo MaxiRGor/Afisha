@@ -1,4 +1,4 @@
-package com.volovich.afisha.adapters;
+package com.bntu.afisha.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.volovich.afisha.model.Event;
-import com.volovich.afisha.R;
+import com.bntu.afisha.model.Event;
+import com.bntu.afisha.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
